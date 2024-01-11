@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./vizsgamunka.css">
+
+</head>
+<body>
+    <header>
+        <ul id="menu">
+            <li><a href="./kapcsolat.html">Kapcsolat </a>
+           </li>
+            
+            <li><a href="./webshop.html">Webshop</a>
+               </li>
+            <li><a href="./gyogynovenyek.html">Gyógynövények</a>
+                <ul id="submenu">
+                    <li><a href="./kamilla.html">Kamilla</a></li>			
+                    <li><a href="./bazsalikom.html">Bazsalikom</a></li>
+                 <li><a href="">...Feltöltés alatt...</a></li>
+                </ul>
+            </li>
+             <li><a href="./vizsgamunka.html">Főoldal </a>
+             </li>
+           </ul>
+    </header>
+    <h1>Kérdésed van? Írj nekünk</h1>
+    <div id="kapcsolat">
+        
+        <label for="nev">Név</label>
+        <input type="text" id="nev" name="nev" required>
+        <label for="email">E-mail cím</label>
+        <input type="text" id="email" name="email" required> <br>
+        <label for="targy" id="uzenett">Üzenet tárgya</label>
+        <select name="targy" id="targy" >
+            <option value="inf">Termékinformáció</option>
+            <option value="ws">Webáruházzal kapcsolatos kérdés</option>
+            <option value="szi">Szállítási információ</option>
+            <option value="egyeb">Egyéb</option>
+        </select>
+        <input type="text"  name="uzenet" id="uzeneti" value="Ide írhatja üzenetét" required><br>
+        <input type="button" id="button" value="Üzenet elküldése" onclick="katt()">
+    </div>
+
+    <footer class="main-footer">
+        <section class="info">
+            <h2 id="footerb">Fontos webshop tudnivalók</h2>
+            <ul class="list-style-icon">
+                <li><a href="./vizsgamunka.html"  class="share">Főoldal</a></li>
+                <li><a href="./gyogynovenyek.html"  class="share">Gyógynövények</a></li>
+                <li><a href="./webshop.html"  class="share">Webshop</a></li>
+                <li><a href="./kapcsolat.html"  class="share">Kapcsolat</a></li>
+            </ul>
+        </section>
+            <section class="info" style="padding-right: 5.0859rem" >
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1442241.4234244444!2d-61.41107922990978!3d-3.1821536478955985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1shu!2shu!4v1704452015282!5m2!1shu!2shu" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="terkep"></iframe>
+            </section>
+            <section class="info" id="harmadik">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <div class="social-block">
+                        <div  id="fb"></div>
+                    </div>
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                    <div class="social-block">
+                        <div  id="tw"></div>
+                    </div>
+                </a>
+                <a href="https://www.pinterest.com/" target="_blank">
+                    <div class="social-block">
+                        <div  id="pin"></div>
+                    </div>
+                </a>
+                <a href="https://instagram.com/" target="_blank">
+                    <div class="social-block">
+                        <div  id="inst"></div>
+                    </div>
+                </a>
+            </section>
+    </footer>
+    
+    <script src="./vizsgamunka.js"></script>
+</body>
+</html>

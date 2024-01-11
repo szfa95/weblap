@@ -1,0 +1,240 @@
+body{
+    background-color: rgb(255, 235, 210);
+    border: 0;
+    margin: 0;
+}
+
+#menu, #menu ul {
+    list-style: none;
+    margin: 10px 0 0 5px;
+    padding: 0;
+}
+#menu a:link, #menu a:active, #menu a:visited {
+    display: inline;
+    color: bisque;
+
+}
+
+#menu li {
+    float: right;
+    padding: 0 10px 0 10px;
+    font-size: x-large;
+    color: bisque;
+}	
+#menu li ul {
+    float: left;
+    position: absolute;
+    left: -999em;
+    text-align: left;
+}
+#menu li ul li {
+    float: none;
+    display: block;
+    font-size: large;
+    padding: 30px 0 10px 0;
+    background-color: rgb(64, 58, 52);
+    color: bisque;
+}
+#menu li:hover ul, #menu li.sfhover ul {
+    left: auto;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: rgb(64, 58, 52);
+    padding: 20px;
+    height: 30px;
+    background-size: cover;
+    
+}
+
+#citromfu{
+    display: inline;
+}
+
+h1{
+    background-image: url(./képek/alap.jpg);
+    background-size: 400px;
+    padding: 170px 5px 20px 5px;
+    font-size: 50px;
+    color: rgb(42, 111, 42);
+}
+
+#kapcsolat{
+    padding-top: 5%;
+    padding-left: 20%;
+    border: rgb(204, 202, 202);
+}
+
+#nev{
+    width: 35.5%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#email{
+    width: 30%;
+    margin-left: 1%;
+}
+
+#uzeneti{
+    margin-top: 2%;
+    height: 100px;
+    width: 38.5%;
+    color: grey;
+    margin-left: 2%;
+
+}
+
+#targy{
+    width: 30%;
+    color: rgb(84, 74, 64);
+    text-align: center;
+}
+
+#button{
+    height: 30px;
+    width: 150px;
+    background-color: bisque;
+    border-color: rgb(187, 187, 187);
+    border-radius: 5px;
+    border-width: 1px;
+    margin-left: 14%;
+}
+
+footer{
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    height: 200px;
+}
+
+.info {
+    padding-right: 1.25rem;
+    padding-left: 6.25rem;
+    background: #5a3816;
+  }
+ 
+section {
+    height: 100%;
+    float: left;
+    color:bisque;
+  }
+
+footer ul {
+    font: 300 14px "MuseoSans";
+    margin: 0;
+    list-style: none;
+    color:bisque;
+  }
+
+.share{
+    color: bisque;
+    font-size: large;
+  }
+
+#harmadik{
+    display: grid;
+    grid-template-areas: 
+    "upper-left upper-r"
+    "d-l d-r";
+}
+#fb{
+    grid-area: upper-left;
+    font-size: 25px;
+    padding: 25px;
+    margin-top: 25px;
+    background-image: url(./képek/fb.jpg);
+    background-size: 150px;
+    height: 100px;
+    width: 100px;
+}
+#tw{
+    grid-area: upper-r;
+    font-size: 25px;
+    padding: 25px;
+    margin-top: 25px;
+    background-image: url(./képek/twitter.webp);
+    background-size: 150px;
+    height: 50px;
+    width: 100px;
+    margin-top: 50px;
+}
+#pin{
+    grid-area: d-l;
+    font-size: 25px;
+    padding: 25px;
+    margin-top: 25px;
+    background-image: url(./képek/pinterest.png);
+    background-size: 150px;
+    height: 100px;
+    width: 100px;
+}
+#inst{
+    grid-area: d-r;
+    font-size: 25px;
+    padding: 25px;
+    margin-top: 25px;
+    background-image: url(./képek/insta.png);
+    background-size: 150px;
+    height: 100px;
+    width: 100px;
+}
+
+#terkep{
+    height: 400px;
+}
+
+#footerb{
+    margin-bottom: 60px;
+    font-size: 40px;
+}
+
+.share{
+    font-size: 20px;
+}
+
+.wsk{
+    height: 200px;
+}
+
+#wslist{
+    list-style-type: none;
+    color: rgb(32, 29, 25);
+}
+
+@media screen and (max-width: 600px) {
+    footer{
+        display: block;
+        height: 500px;
+        width: 500;
+    }
+    h1{
+        font-size: 300%;
+    }
+}
+
+@media screen and (mam-width: 1221px) {
+    footer{
+        grid-template-columns: 50% 50%;
+        width: 100%;
+    }
+    #harmadik{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1221px) {
+
+}
+
+.cimek{
+    font-size: larger;
+    font-style: italic;
+}
+
+.cimek:hover{
+    background-color: #5a3816;
+}
